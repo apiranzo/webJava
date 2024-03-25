@@ -1,0 +1,299 @@
+/*Import Founts*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Import Icons */
+@import url(all.min.css);
+
+
+/*Variables generales */
+:root{
+    --color-fondo: #0c605c;
+    --color-titulos-claro: #d3edcd;
+    --color-titulos-oscuro: #0c605c;
+    --color-titulos-claro-contrario:#FF816E;
+    --color-titulos-claro-transparente-contrario:#ff816e10;
+    --color-titulos-medio-contrario:#f2624c;
+    --color-titulos-oscuro-contrario:  #f95037;
+
+    --shadow-oscuro: 2px 2px 4px #353535;
+    --shadow-suave: 0.5rem 0.5rem 1rem #5d5d5d24;
+
+    --color-cuerpo: black;
+
+    --color-links:rgb(54, 187, 167);
+    --color-links-hover:#f95037; 
+
+    --color-fondo-forms: #2f8e89;
+
+    --tamano-letra: 3rem;
+
+    --pading-general: 1.8rem;
+}
+
+/* Varaiables de estilo */
+body{
+    margin: 0;
+}
+
+header{
+    background-color:  var(--color-fondo);
+    color: var(--color-titulos-claro-contrario);
+    text-shadow: var(--shadow-oscuro);
+    
+}
+.tituloabreb{
+    color: var(--color-titulos-claro-contrario)!important;
+    text-shadow: var(--shadow-oscuro);
+    font-weight: 600!important;
+
+}
+
+.imgLogo{
+  filter: drop-shadow(var(--shadow-oscuro)); 
+
+}
+
+nav{
+    box-shadow: var(--shadow-suave)!important;
+   
+}
+#navprincipal a:hover{
+    color: var(--color-links-hover);
+}
+
+main section{
+    padding: calc(var(--pading-general) + 1.3rem);
+    text-align: center;
+    color: var(--color-cuerpo);
+}
+section h1, h2, h3, h4, h5, h6{
+    color: var(--color-titulos-oscuro);
+    text-align: center;
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* HOME */
+#home{
+    background-color:  var(--color-fondo);
+    color: var(--color-titulos-claro-contrario);
+    text-shadow: var(--shadow-oscuro);
+}
+#home h1{
+    color: var(--color-titulos-claro-contrario)!important;
+    text-shadow: var(--shadow-oscuro);
+}
+#home img{
+    filter: drop-shadow(var(--shadow-oscuro)); 
+}
+
+/* Home card*/
+#homecards .card{
+    border-color: #9da4a400!important;
+    text-align: center;
+    background-color: var(--color-titulos-claro);
+    padding: 2.5rem 0.5rem;
+}
+
+
+#homecards i{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+
+}
+
+/* Temario */
+
+#temario .segunda{
+    counter-reset: item 5;
+}
+#temario .segunda li::before{
+    content: counter(item) ". "; /* Muestra el número de la lista con un punto */
+    counter-increment: item; /* Incrementa el contador */
+}
+
+#temario li:hover{
+    background-color: var(--color-titulos-claro-transparente-contrario)!important;
+}
+
+/* FORMULARIOS */
+#form {
+    padding: var(--pading-general);
+    display: grid;
+    justify-content: center;
+
+}
+
+#form form{
+    
+    padding: calc(var(--pading-general) + 1.3rem);
+
+    background-color: var(--color-fondo-forms);
+    color: var(--color-titulos);
+
+}
+
+#form legend{
+    color: var(--color-titulos-claro)!important;
+    text-transform: uppercase;
+}
+
+/* TABLAS */
+#tabla{
+    padding: var(--pading-general);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    background-color: var(--color-titulos-claro-contrario);
+
+}
+
+#tabla h1{
+    color: var(--color-fondo);
+    font-weight: bold;
+    
+}
+#tabla .table{
+    box-shadow: var(--shadow-suave)!important;
+    border-color: var(--color-titulos-claro-contrario);
+    
+}
+.table thead th, .table tfoot th{
+    background-color: var(--color-titulos-claro)!important;
+}
+
+/* MEDIA */
+#media{
+    padding: var(--pading-general);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+}
+
+#loremphoto h1{
+    color:var(--color-titulos-medio-contrario)!important;
+}
+
+#loremphoto button{
+    background-color: var(--color-fondo-forms)!important;
+    border: var(--color-fondo-forms)!important;
+    color:white!important;
+}
+
+#loremphoto button:hover{
+    background-color: var(--color-fondo)!important;
+}
+
+#loremvideo{
+    color:var(--color-titulos-claro);
+}
+
+#media audio{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Limita el ancho máximo */
+    
+}
+
+
+/* Links card*/
+#linkscards .card{
+    border-color: #9da4a400!important;
+}
+
+#linkscards iframe{
+    border-radius: 12px;
+    box-shadow: var(--shadow-suave);
+}
+#linkscards .card-footer{
+    box-shadow: var(--shadow-suave);
+}
+#linkscards a{
+    text-decoration: none;
+    color:var(--color-fondo-forms);
+
+}
+
+#linkscards a:hover{
+    color:var(--color-titulos-claro-contrario);
+}
+
+/* BOTONES */
+.btn-personal{
+    background-color: var(--color-titulos-medio-contrario)!important;
+    border-color: var(--color-titulos-claro-contrario)!important;
+    box-shadow:2px 2px 4px #5d5d5d8f ;
+    transition: background-color, color, font-weight 0.8s ease; /* Transición para el color de fondo */
+}
+.btn-personal:hover{
+    background-color: var(--color-titulos-oscuro-contrario)!important;
+    color: var(--color-titulos-claro)!important;
+    
+}
+
+.btn-menu:hover{
+    background-color: var(--color-titulos-oscuro-contrario)!important;
+    color: var(--color-titulos-claro)!important;
+    border-color:var(--color-titulos-claro-contrario)
+}
+
+/* LINKS REDES */
+.navredes{
+    box-shadow: none!important;
+    align-items: center;
+    justify-content: center;
+
+}
+.navredes a{
+    margin: 0.5rem 0;
+    text-align: center;
+
+    color:var(--color-fondo-forms);
+}
+
+.navredes a:hover{
+    margin: 0.5rem 0;
+    text-align: center;
+
+    color:var(--color-links-hover);
+}
+
+.navredes a i{
+    box-shadow: var(--shadow-suave)!important;
+}
+
+/* FOOTER */
+.footer-section{
+    background-color: var(--color-fondo);
+
+}
+.footer-text{
+    color: var(--color-titulos-claro-contrario);
+}
+#navfooter a, .footer-section .navredes i{
+    color: var(--color-titulos-claro);
+}
+#navfooter a:hover, .footer-section .navredes i:hover{
+    color: var(--color-links-hover);
+}
+
+.footer-section .navredes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .navredes i{
+    font-size: 1.5rem;
+    text-shadow: var(--shadow-suave);
+}
+
+
+
