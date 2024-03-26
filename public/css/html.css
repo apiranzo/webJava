@@ -107,6 +107,12 @@
     & a:hover{
         color:var(--color-titulos-oscuro-contrario);
     }
+    & a:visited{
+        color:var(--color-titulos-claro);
+    }
+    & a:active{
+        color:var(--color-titulos-claro);
+    }
 }
 
 
