@@ -1,0 +1,135 @@
+/* FORMULARIOS */
+#form {
+    padding: var(--pading-general);
+    display: grid;
+    justify-content: center;
+
+    & form{
+        padding: calc(var(--pading-general) + 1.3rem);
+        
+        background-color: var(--color-fondo-forms);
+        color: var(--color-titulos);
+    }
+
+    & legend{
+        color: var(--color-titulos-claro-contrario)!important;
+        text-transform: uppercase;
+    }
+
+}
+
+/* TABLAS */
+#tabla{
+    padding: var(--pading-general);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    background-color: var(--color-titulos-claro-contrario);
+
+    & h1{
+        color: var(--color-fondo);
+        font-weight: bold;
+        
+    }
+    & .table{
+        box-shadow: var(--shadow-suave)!important;
+        border-color: var(--color-titulos-claro-contrario);
+        
+        & thead th, & tfoot th{
+            background-color: var(--color-titulos-claro)!important;
+        }
+        & tbody tr :hover{
+            background-color: var(--color-titulos-claro-transparente)!important;
+        }
+    }
+}
+
+
+/* MEDIA */
+#media{
+    padding: var(--pading-general);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+    & #loremphoto h1{
+        color:var(--color-titulos-medio-contrario)!important;
+        & button{
+            background-color: var(--color-fondo-forms)!important;
+            border: var(--color-fondo-forms)!important;
+            color:white!important;
+        }
+        
+        & button:hover{
+            background-color: var(--color-fondo)!important;
+        }
+    }
+
+    & #loremvideo{
+        color:var(--color-titulos-claro);
+    }
+    & #loremaudio{
+        background-color: var(--color-titulos-claro-transparente)!important;
+    }
+    & audio{
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 400px; /* Limita el ancho máximo */
+        
+    }
+}
+
+/* Links card*/
+#linkscards {
+
+    & .card{
+        border-color: #9da4a400!important; 
+    }
+    & iframe{
+        border-radius: 12px;
+        box-shadow: var(--shadow-suave);
+    }
+    & .card-footer{
+        box-shadow: var(--shadow-suave);
+        background-color: var(--color-fondo-forms);
+        ;
+    }
+    & a{
+        text-decoration: none;
+        color:var(--color-titulos-claro-contrario);
+    
+    }
+    
+    & a:hover{
+        color:var(--color-titulos-oscuro-contrario);
+    }
+}
+
+
+/* LINKS REDES */
+.navredes{
+    box-shadow: none!important;
+    align-items: center;
+    justify-content: center;
+    & a{
+        margin: 0.5rem 0;
+        text-align: center;
+    
+        color:var(--color-fondo-forms);
+    }
+    
+    & a:hover{
+        margin: 0.5rem 0;
+        text-align: center;
+    
+        color:var(--color-links-hover);
+    }
+    
+    & a i{
+        box-shadow: var(--shadow-suave)!important;
+    }
+}

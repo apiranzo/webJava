@@ -9,6 +9,7 @@
 :root{
     --color-fondo: #0c605c;
     --color-titulos-claro: #d3edcd;
+    --color-titulos-claro-transparente: #d3edcd37;
     --color-titulos-oscuro: #0c605c;
     --color-titulos-claro-contrario:#FF816E;
     --color-titulos-claro-transparente-contrario:#ff816e10;
@@ -31,6 +32,7 @@
 }
 
 /* Varaiables de estilo */
+/* & significa lo de arriba */
 body{
     margin: 0;
 }
@@ -75,155 +77,7 @@ section h1, h2, h3, h4, h5, h6{
     font-style: normal;
 }
 
-/* HOME */
-#home{
-    background-color:  var(--color-fondo);
-    color: var(--color-titulos-claro-contrario);
-    text-shadow: var(--shadow-oscuro);
-}
-#home h1{
-    color: var(--color-titulos-claro-contrario)!important;
-    text-shadow: var(--shadow-oscuro);
-}
-#home img{
-    filter: drop-shadow(var(--shadow-oscuro)); 
-}
 
-/* Home card*/
-#homecards .card{
-    border-color: #9da4a400!important;
-    text-align: center;
-    background-color: var(--color-titulos-claro);
-    padding: 2.5rem 0.5rem;
-}
-
-
-#homecards i{
-    font-size: 3rem;
-    padding-bottom: 1rem;
-
-}
-
-/* Temario */
-
-#temario .segunda{
-    counter-reset: item 5;
-}
-#temario .segunda li::before{
-    content: counter(item) ". "; /* Muestra el número de la lista con un punto */
-    counter-increment: item; /* Incrementa el contador */
-}
-
-#temario li:hover{
-    background-color: var(--color-titulos-claro-transparente-contrario)!important;
-}
-
-/* FORMULARIOS */
-#form {
-    padding: var(--pading-general);
-    display: grid;
-    justify-content: center;
-
-}
-
-#form form{
-    
-    padding: calc(var(--pading-general) + 1.3rem);
-
-    background-color: var(--color-fondo-forms);
-    color: var(--color-titulos);
-
-}
-
-#form legend{
-    color: var(--color-titulos-claro)!important;
-    text-transform: uppercase;
-}
-
-/* TABLAS */
-#tabla{
-    padding: var(--pading-general);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-
-    background-color: var(--color-titulos-claro-contrario);
-
-}
-
-#tabla h1{
-    color: var(--color-fondo);
-    font-weight: bold;
-    
-}
-#tabla .table{
-    box-shadow: var(--shadow-suave)!important;
-    border-color: var(--color-titulos-claro-contrario);
-    
-}
-.table thead th, .table tfoot th{
-    background-color: var(--color-titulos-claro)!important;
-}
-
-/* MEDIA */
-#media{
-    padding: var(--pading-general);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    
-
-}
-
-#loremphoto h1{
-    color:var(--color-titulos-medio-contrario)!important;
-}
-
-#loremphoto button{
-    background-color: var(--color-fondo-forms)!important;
-    border: var(--color-fondo-forms)!important;
-    color:white!important;
-}
-
-#loremphoto button:hover{
-    background-color: var(--color-fondo)!important;
-}
-
-#loremvideo{
-    color:var(--color-titulos-claro);
-}
-
-#media audio{
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 400px; /* Limita el ancho máximo */
-    
-}
-
-
-/* Links card*/
-#linkscards .card{
-    border-color: #9da4a400!important;
-}
-
-#linkscards iframe{
-    border-radius: 12px;
-    box-shadow: var(--shadow-suave);
-}
-#linkscards .card-footer{
-    box-shadow: var(--shadow-suave);
-}
-#linkscards a{
-    text-decoration: none;
-    color:var(--color-fondo-forms);
-
-}
-
-#linkscards a:hover{
-    color:var(--color-titulos-claro-contrario);
-}
 
 /* BOTONES */
 .btn-personal{
@@ -244,30 +98,7 @@ section h1, h2, h3, h4, h5, h6{
     border-color:var(--color-titulos-claro-contrario)
 }
 
-/* LINKS REDES */
-.navredes{
-    box-shadow: none!important;
-    align-items: center;
-    justify-content: center;
 
-}
-.navredes a{
-    margin: 0.5rem 0;
-    text-align: center;
-
-    color:var(--color-fondo-forms);
-}
-
-.navredes a:hover{
-    margin: 0.5rem 0;
-    text-align: center;
-
-    color:var(--color-links-hover);
-}
-
-.navredes a i{
-    box-shadow: var(--shadow-suave)!important;
-}
 
 /* FOOTER */
 .footer-section{
@@ -287,6 +118,7 @@ section h1, h2, h3, h4, h5, h6{
 .footer-section .navredes{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }

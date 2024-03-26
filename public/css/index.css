@@ -1,0 +1,52 @@
+/* HOME */
+#home{
+    background-color:  var(--color-fondo);
+    color: var(--color-titulos-claro-contrario);
+    text-shadow: var(--shadow-oscuro);
+
+    & h1{
+        color: var(--color-titulos-claro-contrario)!important;
+        text-shadow: var(--shadow-oscuro);
+    }
+
+    & img{
+        filter: drop-shadow(var(--shadow-oscuro)); 
+    }
+}
+
+
+/* Home card*/
+#homecards{
+
+    & .card{
+
+        border-color: #9da4a400!important;
+        text-align: center;
+        background-color: var(--color-titulos-claro);
+        padding: 2.5rem 0.5rem;
+    }
+
+    & i{
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Temario */
+#temario{
+
+    & .segunda{
+        counter-reset: item 5;
+    }
+
+    & .segunda>li::before{
+        content: counter(item) ". "; /* Muestra el número de la lista con un punto */
+        counter-increment: item; /* Incrementa el contador */
+    }
+    & li:hover:nth-of-type(even){
+        background-color: var(--color-titulos-claro-transparente-contrario)!important;
+    }
+    & li:hover:nth-of-type(odd){
+        background-color: var(--color-titulos-claro-transparente)!important;
+    }
+}
