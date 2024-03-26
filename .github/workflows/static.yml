@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          # Subir sólo lo que hay en el public del proyecto webJava
+          # Subir sólo lo que hay en el public del proyecto web Java
           path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
