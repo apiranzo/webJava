@@ -70,6 +70,7 @@
                             <a class="nav-link dropdown-toggle show" href="#html" data-bs-toggle="dropdown"
                                 aria-expanded="true">HTML</a>
                             <ul class="dropdown-menu" data-bs-popper="static">
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
                                 <li><a class="dropdown-item" href="#form">Formulario</a></li>
                                 <li><a class="dropdown-item" href="#tabla">Tabla</a></li>
                                 <li><a class="dropdown-item" href="#media">Media</a></li>
@@ -163,16 +164,29 @@
 
                             <hr class="my-4">
 
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="acepted-conditions">
-                                <label class="form-check-label" for="acepted-conditions">Acepto los terminos y
-                                    condiciones</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="save-new-user">
-                                <label class="form-check-label" for="save-new-user">Recordarme para otras
-                                    visitas</label>
-                            </div>
+                            <!-- Añadir el atributo name="ALGUN NOMBRE" en los dos campos de input
+                            se crea una condición de selección entre los distintos campos-->
+                            <fieldset>
+                                <legend>Campo de Selección</legend>
+                                <div class="form-check">
+                                    <input name="condicion"  type="radio" class="form-check-input" id="acepted-conditions">
+                                    <label class="form-check-label" for="acepted-conditions">Acepto los terminos y
+                                        condiciones</label>
+                                </div>
+                                <div class="form-check">
+                                    <input name="condicion" type="radio" class="form-check-input" id="save-new-user">
+                                    <label class="form-check-label" for="save-new-user">Recordarme para otras
+                                        visitas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input name="condicion" type="radio" class="form-check-input" id="no-case">
+                                    <label class="form-check-label" for="no-case">No me hagas caso</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="yes-case">
+                                    <label class="form-check-label" for="yes-case">Yo me puedo quedar marcado</label>
+                                </div>
+                            </fieldset>
 
                         </fieldset>
 
@@ -205,11 +219,17 @@
                                 </div>
                             </div>
                             <hr class="my-4">
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="save-user">
-                                <label class="form-check-label" for="save-user">Recordarme para otras visitas</label>
-                            </div>
+                            <fieldset>
+                                <legend>Campo de Selección múltiple</legend>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="save-user">
+                                    <label class="form-check-label" for="save-user">Recordarme para otras visitas</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="no-user">
+                                    <label class="form-check-label" for="no-user">Recordarme a mi también</label>
+                                </div>
+                            </fieldset>
                         </fieldset>
 
                         <hr class="my-4">

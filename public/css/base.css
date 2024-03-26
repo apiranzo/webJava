@@ -78,7 +78,6 @@ section h1, h2, h3, h4, h5, h6{
 }
 
 
-
 /* BOTONES */
 .btn-personal{
     background-color: var(--color-titulos-medio-contrario)!important;
@@ -121,11 +120,37 @@ section h1, h2, h3, h4, h5, h6{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
+    & i{
+        margin-top:1.5rem;
+        font-size: 1.5rem;
+        text-shadow: var(--shadow-suave);
+    }
 }
-.footer-section .navredes i{
-    font-size: 1.5rem;
-    text-shadow: var(--shadow-suave);
+
+
+
+/* LINKS REDES */
+.navredes{
+    box-shadow: none!important;
+    align-items: center;
+    justify-content: center;
+    
+    & a{
+        margin: 0.5rem 0;
+        text-align: center;
+    
+        color:var(--color-fondo-forms);
+    }
+    
+    & a:hover{
+        margin: 0.5rem 0;
+        text-align: center;
+    
+        color:var(--color-links-hover);
+    }
+    
+    & a i{
+        box-shadow: var(--shadow-suave)!important;
+    }
 }
-
-
-

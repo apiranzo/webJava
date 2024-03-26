@@ -110,26 +110,3 @@
 }
 
 
-/* LINKS REDES */
-.navredes{
-    box-shadow: none!important;
-    align-items: center;
-    justify-content: center;
-    & a{
-        margin: 0.5rem 0;
-        text-align: center;
-    
-        color:var(--color-fondo-forms);
-    }
-    
-    & a:hover{
-        margin: 0.5rem 0;
-        text-align: center;
-    
-        color:var(--color-links-hover);
-    }
-    
-    & a i{
-        box-shadow: var(--shadow-suave)!important;
-    }
-}

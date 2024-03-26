@@ -35,6 +35,15 @@
 /* Temario */
 #temario{
 
+    /*  prueba de elementos estaticos en la web; */
+    
+  /*  & h1{
+        position: sticky;
+        z-index: 1;
+        top: 100px;
+        background-color: rgb(228, 0, 0);
+    } */
+
     & .segunda{
         counter-reset: item 5;
     }
