@@ -1,5 +1,7 @@
  
   form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -102,6 +104,9 @@
     height: 32px;
     display: inline-block;
   }
+
+
+
   
  
   
