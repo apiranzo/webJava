@@ -104,7 +104,10 @@
                   <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
                 </fieldset>
                 <fieldset>
-                  <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+                  <div class="file-select inline" id="src-file1">
+                    <input type="file" name="src-file1" aria-label="Archivo">
+                  </div>
+                  
                   <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
                   <label for="referrer">How did you hear about us?
                     <select id="referrer" name="referrer">
