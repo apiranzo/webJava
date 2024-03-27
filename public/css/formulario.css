@@ -1,0 +1,72 @@
+ 
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  
+  fieldset {
+    border: 5px!important;
+    padding: 2rem 0;
+    border-bottom: 3px solid #1c1ccb;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select,
+  .profile-picture {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border-radius: 0.8rem;
+  }
+  
+  input, textarea, option {
+    background-color: var(--color-titulos-claro-transparente);
+    border: 1px solid var(--color-titulos-oscuro);
+    color: #000000;
+    text-align: center;
+  }
+  input:valid, textarea:valid, option:valid {
+    background-color: var( --color-titulos-claro-transparente-contrario);
+    border: none;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: var(--color-titulos-claro-contrario);
+    border-color: var(--color-titulos-oscuro-contrario);
+    min-width: 300px;
+  }
+  input[type="submit"]:hover {
+    background-color: var(--color-titulos-oscuro-contrario);
+    
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  a{
+    color: #dfdfe2;
+  }
+  

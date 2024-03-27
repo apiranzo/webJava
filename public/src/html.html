@@ -78,7 +78,7 @@
                                 <li><a class="dropdown-item" href="#redes">Redes</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./formulario.html">Formulario</a></li>
                         <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
                         <li class="nav-item"><a class="nav-link" href="./java.html">Java</a></li>
                     </ul>
@@ -162,7 +162,7 @@
 
                             </div>
 
-                            <hr class="my-4">
+                            
 
                             <!-- Añadir el atributo name="ALGUN NOMBRE" en los dos campos de input
                             se crea una condición de selección entre los distintos campos-->
@@ -187,6 +187,14 @@
                                     <label class="form-check-label" for="yes-case">Yo me puedo quedar marcado</label>
                                 </div>
                             </fieldset>
+
+                            <hr class="my-4">
+
+                            <fieldset>
+                                <label class="form-label">Upload a profile picture: </label>
+                                <input type="file" class="form-control"/>
+                                
+                              </fieldset>
 
                         </fieldset>
 
@@ -213,7 +221,8 @@
                             <!-- Campo de texto para el pwd -->
                             <div class="mb-3">
                                 <label class="form-label" for="password">Password:</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <!-- minlength -> numero de caracteres obligatorios en el pws // pattern es la expresión regular que acepta -->
+                                <input type="password" class="form-control" id="exampleInputPassword1" minlength="4" pattern="[a-z0-5]{8,}">
                                 <div class="invalid-feedback">
                                     La contraseña no es correcta!
                                 </div>
@@ -250,8 +259,8 @@
                 <table class="table table-hover mb-5">
                     <thead >
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th> 
+                            <th scope="col ">#</th>
+                            <th scope="col ">Nombre</th> 
                             <th scope="col">Precio</th>
                             <th scope="col">Stock</th>
                         </tr>
@@ -276,7 +285,7 @@
                             <td>10</td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    <tfoot class="table-secondary">
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nombre</th>
@@ -316,7 +325,7 @@
                 <div class="col-lg-7 col-ms-6 py-2">
                     <div class="h-100 row p-5 text-bg-dark rounded-3 justify-content-center">
                         <h1 id="loremvideo" class="display-5 fw-bold py-2">Lorem Video</h1>
-                        <video class ="pb-3" controls src="#"></video>
+                        <video class ="pb-3 ratio ratio-16x9" controls src="#"></video>
                         <a href="#" target="_blank" class=" btn-personal btn btn-primary">Video</a>
                     </div>
                 </div>
@@ -429,7 +438,7 @@
             <ul id="navfooter" class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="../index.html" class="nav-link px-2 ">Inicio</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 ">HTML</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 ">CSS</a></li>
+                <li class="nav-item"><a href="./formulario.html" class="nav-link px-2 ">Formulario</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 ">JavaScript</a></li>
                 <li class="nav-item"><a href="./java.html" class="nav-link px-2 ">Java</a></li>
             </ul>
