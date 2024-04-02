@@ -5,7 +5,7 @@
     grid-template-rows: 2fr, 1.5fr, 1fr, 0.5fr;
     grid-gap: 20px;
     
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.26);
     
     width: 80vw;
     max-width: 700px;
@@ -16,7 +16,7 @@
       grid-column: 1 / 4;
       grid-row: 1 /2 ;
       justify-content: center;
-      background-color: red;
+      background-color: rgba(255, 0, 0, 0.345);
   
       display: flex;
       flex-direction: column;
@@ -26,7 +26,7 @@
     #ftwo{
       grid-column: 3;
       grid-row: 2;
-      background-color: yellow;
+      background-color: rgba(255, 255, 0, 0.247);
   
       display: flex;
       flex-direction: column;
@@ -36,7 +36,7 @@
     #fthree{
       grid-column: 1 / 3;
       grid-row: 2;
-      background-color: green;
+      background-color: rgba(0, 128, 0, 0.238);
   
       display: flex;
       flex-direction: column;
@@ -46,7 +46,7 @@
     #ffour{
       grid-column: 1 / 4;
       grid-row: 3;
-      background-color: purple;
+      background-color: rgba(128, 0, 128, 0.244);
   
       display: flex;
       flex-direction: column;
@@ -56,7 +56,7 @@
     #ffive{
       grid-column: 1 / 4;
       grid-row: 4;
-      background-color: orange;
+      background-color: rgba(255, 166, 0, 0.279);
   
       display: flex;
       flex-direction: column;
@@ -69,7 +69,7 @@
   fieldset {
     border: 5px!important;
     padding: 2rem 0;
-    border-bottom: 3px solid #1c1ccb;
+    border-bottom: 3px solid #1c1ccb46;
   }
   
   fieldset:last-of-type {
@@ -163,13 +163,14 @@
     display: inline-block;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 750px) {
     form {
         display: grid;
-        grid-template-rows: 2fr, 1fr, 1.5fr, 1fr, 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr, 1.5fr, 1fr, 0.5fr, 0.5fr;
         grid-gap: 20px;
         
-        background-color: blue;
+        background-color: rgba(0, 0, 255, 0.17);
         
         width: 80vw;
         max-width: 700px;
@@ -178,9 +179,9 @@
     
         #fone{
           grid-column: 1 ;
-          grid-row: 1 /2 ;
+          grid-row: 1 ;
           justify-content: center;
-          background-color: red;
+          background-color: rgba(255, 0, 0, 0.232);
       
           display: flex;
           flex-direction: column;
@@ -190,7 +191,7 @@
         #ftwo{
           grid-column: 1;
           grid-row: 2;
-          background-color: yellow;
+          background-color: rgba(255, 255, 0, 0.342);
       
           display: flex;
           flex-direction: column;
@@ -199,8 +200,8 @@
         }
         #fthree{
           grid-column: 1 ;
-          grid-row: 2;
-          background-color: green;
+          grid-row: 3;
+          background-color: rgba(0, 128, 0, 0.321);
       
           display: flex;
           flex-direction: column;
@@ -209,8 +210,8 @@
         }
         #ffour{
           grid-column: 1;
-          grid-row: 3;
-          background-color: purple;
+          grid-row: 4;
+          background-color: rgba(128, 0, 128, 0.299);
       
           display: flex;
           flex-direction: column;
@@ -218,9 +219,9 @@
           align-items: center;
         }
         #ffive{
-          grid-column: 1 / 4;
-          grid-row: 4;
-          background-color: orange;
+          grid-column: 1;
+          grid-row: 5;
+          background-color: rgba(255, 166, 0, 0.359);
       
           display: flex;
           flex-direction: column;
