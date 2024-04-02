@@ -78,10 +78,9 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./formulario.html">Formularios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./java.html">Java</a></li>
                         <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="./src/admin.html">Administración</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./admin.html">Administración</a></li>
                             <li class="navbar-text">Nombre de usuario</li>
                             <li class="nav-item"><a class="nav-link" href="#">Cerrar sessión</a></li>
                         </ul>
@@ -90,27 +89,24 @@
             </div>
         </div>
     </nav>
-    <main class="container">
-        <section id="listado">
+    <main class="container justify-content-center align-items-center">
+        <section id="formregistros" class="w-100 d-flex row justify-content-center">
+            <h1 class=" mb-5">Formulario de productos</h1>
 
-        </section>
-        <section id="form" class="container px-5 ">
-            <h1 class="mt-5 mb-3">Registro de producto</h1>
-
-            <form class="form border rounded-3 needs-validation align-items-center" action="/formulario-contacto" method="post">
+            <form class="d-flex row form-needs-validation justify-content-center text-center px-5" action="/formulario-productos" method="post">
 
                 <fieldset>
-                    <legend class="text-center mb-3 fw-bold text-body-emphasis">
-                        Formulario de registro
+                    <legend class="text-center mb-3 fw-bold text-body-emphasis mb-5">
+                        Nuevo Producto
                     </legend>
 
-                    <div class="mb-3"><!-- Campo de texto para el id -->
+                    <div class="mb-4"><!-- Campo de texto para el id -->
                         <label class="form-label" for="id">Id</label>
                         <input class="form-control" placeholder="id" type="id" id="id" name="id" readonly
                             required>
                     </div>
 
-                    <div class="mb-3"><!-- Campo de texto para el nombre -->
+                    <div class="mb-4"><!-- Campo de texto para el nombre -->
                         <label class="form-label" for="nombre">Nombre</label>
                         <input class="form-control" placeholder="nombre" type="text" id="nombre" name="nombre"
                             required>
@@ -118,7 +114,7 @@
                             Introduzca un nombre correcto
                         </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <!-- Campo de Precio -->
                         <label class="form-label" for="precio">Precio</label>
                         <input type="number" step="0.01" class="form-control" placeholder="precio" id="precio"
@@ -136,25 +132,21 @@
                             Introduzca un stock correcto
                         </div>
                     </div>
-                    
-
                 </fieldset>
 
                 <hr class="my-4">
 
-                <div class="row mb-3">
-                    <div class="offset-sm-2 col-sm">
+                <div class="row">
+                    <div class="col-sm">
                         <!-- Botón de envío -->
-                        <button class="btn-personal w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                        <button class="btn-personal w-50 btn btn-lg btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
-            <br class="m-5">
         </section>
 
-
-        <section id="tabla" >
-            <h1 class="mt-5 mb-3">Listado de productos</h1>
+        <section id="tabla" class="container d-flex row">
+            <h1 class="mb-5 mt-3">Listado de productos</h1>
             <div class="container d-md-flex flex-md-equal my-md-3 p-md-5 px-5">
 
                 <table class="table table-hover mb-5">
@@ -168,34 +160,34 @@
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Bicicleta</td>
-                            <td>55&euro;</td>
-                            <td>6</td>
-                            <td>
-                                <a class="btn btn-primary" href="#">Editar</a>
-                                <a class="btn btn-danger" href="#">Eliminar</a>
+                        <tr >
+                            <th class="align-middle" scope="row">1</th>
+                            <td class="align-middle">Bicicleta</td>
+                            <td class="align-middle">55&euro;</td>
+                            <td class="align-middle">6</td>
+                            <td class="align-middle">
+                                <a class="btn btn-primary m-1" href="#">Editar</a>
+                                <a class="btn btn-danger m-1" href="#">Eliminar</a>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
-                            <td>Palas</td>
-                            <td>2&euro;</td>
-                            <td>50</td>
-                            <td>
-                                <a class="btn btn-primary" href="#">Editar</a>
-                                <a class="btn btn-danger" href="#">Eliminar</a>
+                            <th class="align-middle" scope="row">2</th>
+                            <td class="align-middle">Palas</td>
+                            <td class="align-middle">2&euro;</td>
+                            <td class="align-middle">50</td>
+                            <td class="align-middle">
+                                <a class="btn btn-primary m-1" href="#">Editar</a>
+                                <a class="btn btn-danger m-1" href="#">Eliminar</a>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
-                            <td>Cantimplora</td>
-                            <td>9,99&euro;</td>
-                            <td>10</td>
-                            <td>
-                                <a class="btn btn-primary" href="#">Editar</a>
-                                <a class="btn btn-danger" href="#">Eliminar</a>
+                            <th class="align-middle" scope="row">3</th>
+                            <td class="align-middle">Cantimplora</td>
+                            <td class="align-middle">9,99&euro;</td>
+                            <td class="align-middle">10</td>
+                            <td class="align-middle">
+                                <a class="btn btn-primary m-1" href="#">Editar</a>
+                                <a class="btn btn-danger m-1" href="#">Eliminar</a>
                             </td>
                         </tr>
                     </tbody>
@@ -206,7 +198,7 @@
                             <th scope="col">Precio</th>
                             <th scope="col">Stock</th>
                             <td>
-                                <a class="btn btn-primary" href="#">Añadir</a>
+                                <a class="btn btn-primary m-1" href="#formregistros">Añadir</a>
                             </td>
                         </tr>
                     </tfoot>
@@ -224,10 +216,10 @@
         <div class="container py-3 mt-2 py-5">
             <ul id="navfooter" class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="../index.html" class="nav-link px-2 ">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 ">HTML</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 ">CSS</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 ">JavaScript</a></li>
-                <li class="nav-item"><a href="./java.html" class="nav-link px-2 ">Java</a></li>
+                <li class="nav-item"><a href="./html.html" class="nav-link px-2 ">HTML</a></li>
+                <li class="nav-item"><a href="./productos.html" class="nav-link px-2 ">Productos</a></li>
+                <li class="nav-item"><a href="./formulario.html" class="nav-link px-2 ">Formularios</a></li>
+                <li class="nav-item"><a href="./admin.html" class="nav-link px-2 ">Administración</a></li>
             </ul>
             <div class="footer-text text-center">
                 <img class="bi mx-2" src="../media/logo/procesador_verde_claro.png" width="25" height="auto">
