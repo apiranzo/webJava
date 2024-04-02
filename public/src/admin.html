@@ -22,6 +22,8 @@
 
     <script src="https://kit.fontawesome.com/4fe330fef8.js" crossorigin="anonymous"></script>
 
+    <script src="../js/formproductos.js"></script>
+
 </head>
 
 <body>
@@ -90,10 +92,10 @@
         </div>
     </nav>
     <main class="container justify-content-center align-items-center">
-        <section id="formregistros" class="w-100 d-flex row justify-content-center">
+        <section class="w-100 d-flex row justify-content-center">
             <h1 class=" mb-5">Formulario de productos</h1>
 
-            <form class="d-flex row form-needs-validation justify-content-center text-center px-5" action="/formulario-productos" method="post">
+            <form id="formregistros" class="d-flex row form-needs-validation justify-content-center text-center px-5" action="/formulario-productos" method="post">
 
                 <fieldset>
                     <legend class="text-center mb-3 fw-bold text-body-emphasis mb-5">
@@ -143,6 +145,10 @@
                     </div>
                 </div>
             </form>
+            <div id="productoAñadido" class="d-flex row justify-content-center text-center px-5">
+                
+            </div>
+
         </section>
 
         <section id="tabla" class="container d-flex row">
@@ -209,7 +215,8 @@
 
         </section>
     </main>
-
+        
+   
 
     <footer class="footer-section">
 
