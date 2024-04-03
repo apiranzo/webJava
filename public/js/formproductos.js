@@ -105,11 +105,11 @@ function seleccionar(id){
     cbody.style = 'width: 18rem';
     cbody.innerHTML = `
                     <img src="https://picsum.photos/200/100?random=1" class="card-img-top" alt="Lorem photo">
-                    <div class="card-body m-4">
+                    <div class="card-body m-2">
                         <h5 class="card-title">${rec[0].nombre}</h5>
                         <p class="card-text">${rec[0].precio}&euro;</p>
                     </div>
-                    <div class="card-footer ">
+                    <div class="card-footer">
                         <small class="text-body-secondary blockquote-footer">Stock: ${rec[0].stock}</small>
                         </div>
                     <div class="d-flex col justify-content-center m-1">
