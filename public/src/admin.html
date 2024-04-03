@@ -22,8 +22,7 @@
 
     <script src="https://kit.fontawesome.com/4fe330fef8.js" crossorigin="anonymous"></script>
 
-    <script src="../js/formproductos.js"></script>
-
+    <script defer src="../js/formproductos.js"></script>
 </head>
 
 <body>
@@ -97,7 +96,8 @@
         <section class="w-100 d-flex row justify-content-center">
             <h1 class=" mb-5">Formulario de productos</h1>
 
-            <form id="formregistros" class="d-flex row form-needs-validation justify-content-center text-center px-5" action="../js/formproductos.js" method="post">
+            <form id="formregistros" class="d-flex row form-needs-validation justify-content-center text-center px-5"
+                action="../js/formproductos.js" method="post">
 
                 <fieldset>
                     <legend class="text-center mb-3 fw-bold text-body-emphasis mb-5">
@@ -106,14 +106,12 @@
 
                     <div class="mb-4"><!-- Campo de texto para el id -->
                         <label class="form-label" for="id">Id</label>
-                        <input class="form-control" placeholder="id" type="id" id="id" name="id" readonly
-                            required>
+                        <input class="form-control" placeholder="id" type="id" id="id" name="id" readonly required>
                     </div>
 
                     <div class="mb-4"><!-- Campo de texto para el nombre -->
                         <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control" placeholder="nombre" type="text" id="nombre" name="nombre"
-                            required>
+                        <input class="form-control" placeholder="nombre" type="text" id="nombre" name="nombre" required>
                         <div class="invalid-feedback">
                             Introduzca un nombre correcto
                         </div>
@@ -130,8 +128,8 @@
                     <div class="mb-3">
                         <!-- Campo de stock -->
                         <label class="form-label" for="stock">Stock</label>
-                        <input type="number" class="form-control" placeholder="precio" id="precio"
-                            name="stock" required>
+                        <input type="number" class="form-control" placeholder="stock" id="stock" name="stock"
+                            required>
                         <div class="invalid-feedback">
                             Introduzca un stock correcto
                         </div>
@@ -147,28 +145,24 @@
                     </div>
                 </div>
             </form>
-            <div id="productoAñadido" class="d-flex row justify-content-center text-center px-5">
-                
-            </div>
-
         </section>
 
         <section id="tabla" class="container d-flex row">
             <h1 class="mb-5 mt-3">Listado de productos</h1>
             <div class="container d-md-flex flex-md-equal my-md-3 p-md-5 px-5">
 
-                <table class="table table-hover mb-5">
-                    <thead >
+                <table id="tregistros" class="table table-hover mb-5">
+                    <thead>
                         <tr>
                             <th scope="col ">#</th>
-                            <th scope="col ">Nombre</th> 
+                            <th scope="col ">Nombre</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Stock</th>
                             <th scope="col">Opciones</th>
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
-                        <tr >
+                    <tbody id="tregistrosbody" class="table-group-divider">
+                        <tr>
                             <th class="align-middle" scope="row">1</th>
                             <td class="align-middle">Bicicleta</td>
                             <td class="align-middle">55&euro;</td>
@@ -178,26 +172,7 @@
                                 <a class="btn btn-danger m-1" href="#">Eliminar</a>
                             </td>
                         </tr>
-                        <tr>
-                            <th class="align-middle" scope="row">2</th>
-                            <td class="align-middle">Palas</td>
-                            <td class="align-middle">2&euro;</td>
-                            <td class="align-middle">50</td>
-                            <td class="align-middle">
-                                <a class="btn btn-primary m-1" href="#">Editar</a>
-                                <a class="btn btn-danger m-1" href="#">Eliminar</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="align-middle" scope="row">3</th>
-                            <td class="align-middle">Cantimplora</td>
-                            <td class="align-middle">9,99&euro;</td>
-                            <td class="align-middle">10</td>
-                            <td class="align-middle">
-                                <a class="btn btn-primary m-1" href="#">Editar</a>
-                                <a class="btn btn-danger m-1" href="#">Eliminar</a>
-                            </td>
-                        </tr>
+
                     </tbody>
                     <tfoot class="table-secondary table-secondary">
                         <tr>
@@ -206,19 +181,22 @@
                             <th scope="col">Precio</th>
                             <th scope="col">Stock</th>
                             <td>
-                                <a class="btn btn-primary m-1" href="#formregistros">Añadir</a>
+                                <a class="btn btn-primary m-1" href="javascript:formulario()">Añadir</a>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
+
+                <div id="cregistro" class="col d-flex justify-content-center align-items-center">
+
+                </div>
+                
+
             </div>
-
-
-
         </section>
     </main>
-        
-   
+
+
 
     <footer class="footer-section">
 
