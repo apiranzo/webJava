@@ -176,7 +176,7 @@ console.log(p1, typeof p1);
 console.table(p1.nombreCompleto(), p2);
 console.log(p1.constructor.name);
 
-    /*Classes */
+    /*Classes 
 
     class Persona2{
         constructor(nombre, apellido){
@@ -192,7 +192,7 @@ console.log(p1.constructor.name);
                 throw new Error('El nombre debe ser una cadena de texto');
             }
             this.nombre = nNombre;
-        } */
+        } 
         get apellido(){
             return this.apellido;
         }
@@ -205,15 +205,15 @@ console.log(p1.constructor.name);
         nombreCompleto(){
             return this.nombre + ' ' + this.apellido;
         }
-    }
+    } */
     
-    const p3 = new Persona2('Javier' , 'Leire');
+   // const p3 = new Persona2('Javier' , 'Leire');
     
 
-    p3.edad = 20;
+    const p3 = 20;
    
     
-    console.log(p3, typeof p3, p3.constructor.name, p3.nombreCompleto());
+    console.log(p3, typeof p3);
 
 
 
