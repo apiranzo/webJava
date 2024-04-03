@@ -1,5 +1,7 @@
 const formproducto = document.querySelector("#formregistros");
+const listproductos = fetch("json/productos.json");
 
+console.log(listproductos);
 
 class Producto{
     constructor(id, nombre, precio,stock){

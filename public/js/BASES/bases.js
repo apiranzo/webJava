@@ -187,12 +187,12 @@ console.log(p1.constructor.name);
             return this.nombre;
         }
 
-        set nombre(nNombre){
+       /* set nombre(nNombre){
             if (typeof nNombre !== 'string'){
                 throw new Error('El nombre debe ser una cadena de texto');
             }
             this.nombre = nNombre;
-        }
+        } */
         get apellido(){
             return this.apellido;
         }
