@@ -215,6 +215,29 @@ console.log(p1.constructor.name);
     
     console.log(p3, typeof p3);
 
+    // Acumulador
+    [1, 3, 6, 7].reduce((dato, acumulador) => {
+        dato + acumulador;
+    });
+
+    /* Consultas a base de datos normalmente
+    se va a usar el find() filter() map() reduce() */
+    /* find(elemento => {
+        booleano
+    });
+    filter(elemento => {
+        
+    });
+    map(elemento => {
+        
+    });
+    reduce(elemento, acumulador => {
+        
+    });
+    */
+    
+
+
 
 
 
