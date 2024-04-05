@@ -1,0 +1,40 @@
+{
+  "curso": [
+    {
+      "nombre": "alumno 3",
+      "asistencia": "1",
+      "nota": 2.4,
+      "id": 5
+    },
+    {
+      "nombre": "33",
+      "asistencia": "1",
+      "nota": 0,
+      "id": 6
+    },
+    {
+      "nombre": "nuev3",
+      "asistencia": "0",
+      "nota": 6,
+      "id": 7
+    },
+    {
+      "nombre": "aaa",
+      "asistencia": "1",
+      "nota": 3,
+      "id": 8
+    },
+    {
+      "nombre": "3",
+      "asistencia": "0",
+      "nota": 0,
+      "id": 9
+    },
+    {
+      "nombre": "alumno 5",
+      "asistencia": "1",
+      "nota": 0,
+      "id": 10
+    }
+  ]
+}

@@ -14,7 +14,19 @@
             "type": "chrome",
             "request": "launch",
             "name": "SERVIDOR",
-            "url": "http://127.0.0.1:8080/public/src/admin.html"
-        }
+            "url": "http://127.0.0.1:3000/public/src/admin.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "FICHERO CURSOS",
+            "file": "${workspaceFolder}/public/js/cursos/index.html"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "SERVIDOR-Cursos",
+            "url": "http://127.0.0.1:3000/public/js/cursos/index.html"
+        },
     ]
 }

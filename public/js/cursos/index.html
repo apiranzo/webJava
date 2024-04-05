@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aplicació web pel cálcul i registre de cursos" />
+    <meta name="author" content="apiranzo" />
+    <meta name="keywords"
+        content="Java, JEE, HTML, CSS, JavaScript, front-end, back-end, web, tecnologia, base de datos, mysql" />
+    <meta name="language" content="español" />
+
+    <title>Gestor de cursos</title>
+
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+    <script src="../bootstrap.bundle.js"></script>
+    <script defer src="./cursos.js"></script>
+</head>
+<header>
+    
+</header>
+<body>
+    <header>
+        <div class="px-4 pb-5 text-center">
+            <img class="imgLogo d-block pt-5 pb-3 mx-auto" src="../../media/logo/procesador_verde_claro.png"
+                alt="Logo web desarrollo" width="10%" height="auto">
+            <h1 class="display-5 fw-bold">Gestor de cursos</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Sistema de gestió de qualificacions</p>
+            </div>
+        </div>
+    </header>
+
+    <h1>Cursos Calculadora</h1>
+
+    <table id="tcursos">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Asistencia</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody id="tbcursos">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:formulario()">Añadir</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form id="fcursos">
+        <input type="number" name="id" placeholder="Id">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <select name="asistencia" id="asistencia">
+            <option value="0">Presentado</option>
+            <option value="1">No presentado</option>
+        </select>
+        <input type="number" step="0.01" name="nota" placeholder="Nota">
+        
+        <button>Guardar</button>
+    </form>
+
+    <section id="resumen">
+        
+    </section>
+    
+</body>
+</html>
