@@ -1,39 +1,39 @@
 {
   "curso": [
     {
-      "nombre": "alumno 3",
-      "asistencia": "1",
-      "nota": 2.4,
+      "nombre": "abc",
+      "nota": "1",
+      "assistencia": "0",
       "id": 5
     },
     {
-      "nombre": "33",
-      "asistencia": "1",
-      "nota": 0,
+      "nombre": "a",
+      "nota": "0",
+      "assistencia": "1",
       "id": 6
     },
     {
-      "nombre": "nuev3",
-      "asistencia": "0",
-      "nota": 6,
+      "nombre": "ccc",
+      "nota": "0",
+      "assistencia": "1",
       "id": 7
     },
     {
-      "nombre": "aaa",
-      "asistencia": "1",
-      "nota": 3,
+      "nombre": "bb",
+      "nota": "0",
+      "assistencia": "0",
       "id": 8
     },
     {
-      "nombre": "3",
-      "asistencia": "0",
-      "nota": 0,
+      "nombre": "cc",
+      "nota": "1",
+      "assistencia": "0",
       "id": 9
     },
     {
-      "nombre": "alumno 5",
-      "asistencia": "1",
-      "nota": 0,
+      "nombre": "s",
+      "nota": "0",
+      "assistencia": "1",
       "id": 10
     }
   ]

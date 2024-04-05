@@ -1,78 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Aplicació web pel cálcul i registre de cursos" />
-    <meta name="author" content="apiranzo" />
-    <meta name="keywords"
-        content="Java, JEE, HTML, CSS, JavaScript, front-end, back-end, web, tecnologia, base de datos, mysql" />
-    <meta name="language" content="español" />
+  <meta name="description" content="Aplicació web pel cálcul i registre de cursos" />
+  <meta name="author" content="apiranzo" />
+  <meta name="keywords"
+    content="Java, JEE, HTML, CSS, JavaScript, front-end, back-end, web, tecnologia, base de datos, mysql" />
+  <meta name="language" content="español" />
 
-    <title>Gestor de cursos</title>
+  <title>Gestor de cursos</title>
 
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/html.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/4fe330fef8.js" crossorigin="anonymous"></script>
 
-    <script src="../bootstrap.bundle.js"></script>
-    <script defer src="./cursos.js"></script>
+  <script src="../bootstrap.bundle.js"></script>
+  <script defer src="./cursos.js"></script>
 </head>
-<header>
-    
-</header>
+
 <body>
-    <header>
-        <div class="px-4 pb-5 text-center">
-            <img class="imgLogo d-block pt-5 pb-3 mx-auto" src="../../media/logo/procesador_verde_claro.png"
-                alt="Logo web desarrollo" width="10%" height="auto">
-            <h1 class="display-5 fw-bold">Gestor de cursos</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Sistema de gestió de qualificacions</p>
-            </div>
+  <header>
+    <div class="px-4 pb-5 text-center">
+      <img class="imgLogo d-block pt-5 pb-3 mx-auto" src="../../media/logo/procesador_verde_claro.png"
+        alt="Logo web desarrollo" width="10%" height="auto">
+      <h1 class="display-5 fw-bold">Gestor de Qualificacions</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Sistema de gestió de cursos</p>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+    <div class="container fluid">
+      <a class="tituloabreb navbar-brand d-md-none" href="#">
+        <img class="bi" src="../../media/logo/procesador_verde_claro.png" width="25" height="auto">
+        </img>
+        SGQ
+      </a>
+      <button class="btn-menu navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <img class="bi mx-2" src="../../media/logo/procesador_verde_claro.png" width="25" height="auto">
+          </img>
+          <h5 class="tituloabreb offcanvas-title" id="offcanvasLabel">SGQ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </header>
 
-    <h1>Cursos Calculadora</h1>
 
-    <table id="tcursos">
-        <thead>
+        <div class="offcanvas-body d-flex justify-content-center">
+          <ul id="navprincipal" class="navbar-nav d-flex justify-content-evenly align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#">
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#"></use>
+                </svg>
+              </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Inici</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Formulari</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Taules</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="col-md-6 col-lg-8 my-5 mx-auto">
+      <div class="container d-md-flex flex-md-equal my-md-1 p-md-1 px-5">
+
+        <table id="tcursos" class="table table-hover">
+          <thead>
             <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Asistencia</th>
-                <th>Nota</th>
+              <th scope="col ">#</th>
+              <th scope="col ">Nom</th>
+              <th scope="col">Apte</th>
+              <th scope="col">Assistència</th>
             </tr>
-        </thead>
-        <tbody id="tbcursos">
-
-        </tbody>
-        <tfoot>
+          </thead>
+          <tbody class="table-group-divider" id="tbcursos">
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="javascript:formulario()">Añadir</a></td>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-        </tfoot>
-    </table>
-
-    <form id="fcursos">
-        <input type="number" name="id" placeholder="Id">
-        <input type="text" name="nombre" placeholder="Nombre">
-        <select name="asistencia" id="asistencia">
-            <option value="0">Presentado</option>
-            <option value="1">No presentado</option>
-        </select>
-        <input type="number" step="0.01" name="nota" placeholder="Nota">
-        
-        <button>Guardar</button>
-    </form>
-
-    <section id="resumen">
-        
+          </tbody>
+          <tfoot class="table-secondary">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a class="btn btn-primary btn-personal" href="javascript:formulario()">Añadir</a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </section>
-    
+    <section class="col-lg-6 col-xxl-4 my-5 mx-auto">
+      <form id="fcursos" class="form rounded-3 needs-validation" action="/formulario-contacto" method="post">
+        <fieldset>
+          <legend class="text-center mb-3 fw-bold text-body-emphasis">
+            Registre d'alumnes
+          </legend>
+          <div class="mb-3"><!-- Campo de texto para el nombre -->
+            <label class="form-label" for="nombre">Id</label>
+            <input class="form-control" placeholder="id" type="text" id="id" name="id" disabled>
+          </div>
+          <div class="mb-3"><!-- Campo de texto para el nombre -->
+            <label class="form-label" for="nombre">Nom</label>
+            <input class="form-control" placeholder="Nom" type="text" id="nombre" name="nombre" required>
+            <div class="invalid-feedback">
+              Introdueix un nom
+            </div>
+          </div>
+          <div class="mb-3">
+            <!-- Campo de selección (opciones) -->
+            <select class="form-select" id="nota" name="nota">
+              <option selected>Nota</option>
+              <option value="0">Apte</option>
+              <option value="1">No apte</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona una nota
+            </div>
+          </div>
+          <hr class="my-4">
+          <div class="mb-3">
+            <!-- Campo de selección (opciones) -->
+            <select class="form-select" id="assistencia" name="assistencia">
+              <option selected>Assistència</option>
+              <option value="0">Presentat</option>
+              <option value="1">No presentat</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona una opció
+            </div>
+          </div>
+          <hr class="my-4">
+
+        <hr class="my-4">
+        <!-- Botón de envío -->
+        <button class="btn-personal w-100 btn btn-lg btn-primary" type="submit">Guardar</button>
+      </form>
+    </section>
+    <section id="resumen" >
+
+    </section>
+
+
+  </main>
+
+
+
+
+
+
+
+
 </body>
+
 </html>
