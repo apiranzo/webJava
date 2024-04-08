@@ -72,8 +72,7 @@ function listado() {
 
     let total = alumnos.length;
 
-    resumenbloc.innerHTML = `
-                    <div class="container px-4">
+    $(`<div class="container px-4">
                         <h2 class="pb-3 border-bottom text-center">Resum</h2>
 
                         <div class="row d-flex align-items-center text-center mt-5 mb-3">
@@ -109,10 +108,9 @@ function listado() {
                             </div>
                         </div>
                     </div>
+    
+    `).appendTo($('#sec-resum'));
 
-    `;
-
-    resumen.appendChild(resumenbloc);
 }
 
 function formulario(id) {
