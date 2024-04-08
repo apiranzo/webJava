@@ -20,7 +20,10 @@
   <script src="https://kit.fontawesome.com/4fe330fef8.js" crossorigin="anonymous"></script>
 
   <script src="../bootstrap.bundle.js"></script>
-  <script defer src="./cursos.js"></script>
+  <script defer src="./cursosJquery.js"></script>
+ <!-- <script defer src="./cursos.js"></script> -->
+  <script src="../jquery-3.7.1.min.js"></script>
+
 </head>
 
 <body>
@@ -71,39 +74,7 @@
     </div>
   </nav>
   <main class="container">
-    <section class="col-md-6 col-lg-8 my-5 mx-auto">
-      <div class="container d-md-flex flex-md-equal my-md-1 p-md-1 px-5">
-
-        <table id="tcursos" class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col ">#</th>
-              <th scope="col ">Nom</th>
-              <th scope="col">Apte</th>
-              <th scope="col">Assistència</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider" id="tbcursos">
-            <tr>
-              <th scope="row"></th>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-          <tfoot class="table-secondary">
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><a class="btn btn-primary btn-personal" href="javascript:formulario()">Añadir</a></td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </section>
-    <section class="col-lg-6 col-xxl-4 my-5 mx-auto">
+    <section id="sec-form"class="col-lg-6 col-xxl-4 my-5 mx-auto">
       <form id="fcursos" class="form rounded-3 needs-validation" action="/formulario-contacto" method="post">
         <fieldset>
           <legend class="text-center mb-3 fw-bold text-body-emphasis">
@@ -150,13 +121,45 @@
         <button class="btn-personal w-100 btn btn-lg btn-primary" type="submit">Guardar</button>
       </form>
     </section>
-    <section id="resumen" >
+    <section id="sec-tabla" class="col-md-6 col-lg-8 my-5 mx-auto">
+      <div class="container d-md-flex flex-md-equal my-md-1 p-md-1 px-5">
+
+        <table id="tcursos" class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col ">#</th>
+              <th scope="col ">Nom</th>
+              <th scope="col">Apte</th>
+              <th scope="col">Assistència</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider" id="tbcursos">
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot class="table-secondary">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a class="btn btn-primary btn-personal" href="javascript:formulario()">Añadir</a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section id="sec-resum" col-md-6 col-lg-8 my-5 mx-auto" >
 
     </section>
 
+    
 
   </main>
-
 
 
 

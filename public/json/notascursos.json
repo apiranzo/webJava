@@ -5,6 +5,24 @@
       "nota": "0",
       "assistencia": "1",
       "id": 10
+    },
+    {
+      "nombre": "a",
+      "nota": "0",
+      "assistencia": "0",
+      "id": 11
+    },
+    {
+      "nombre": "a",
+      "nota": "0",
+      "assistencia": "0",
+      "id": 12
+    },
+    {
+      "nombre": "b",
+      "nota": "Nota",
+      "assistencia": "0",
+      "id": 13
     }
   ]
 }
