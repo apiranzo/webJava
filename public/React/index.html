@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Cargamos biblioteca de React/Babel-->
+    <script defer src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script defer src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script defer src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!--Cargamos los componentos de React-->
+    <script defer type="text/babel" src="js/App.jsx"></script>
+    <script defer type="text/babel" src="js/Prueba.jsx"></script>
+
+    <!--Cargamos la DOM de React
+    ReactDOM.render():
+En la función ReactDOM.render(), aún no puedes renderizar varios elementos directamente. Debes renderizar un solo componente en el nodo raíz.
+Sin embargo, dentro de ese componente, puedes renderizar un array de componentes sin problemas.
+    
+    -->
+    <script defer type="text/babel" data-presets="env,react" id="react-input">
+        ReactDOM.createRoot(document.getElementById('salida-react')).render(
+            <App></App>
+        )
+    </script>
+
+</head>
+<body>
+
+    <!--Elemento de React-->
+    <body id="salida-react"></body>
+    
+</body>
+</html>
